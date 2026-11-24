@@ -1,21 +1,26 @@
 # Celso Vidros | Glass Works
 
-Site institucional da Celso Vidros, mantido pela XGreat.
+Site institucional mantido pela XGreat.
 
-## Estado atual
+## Publicação (24/11/2026)
 
-Fase A concluída: estrutura de desenvolvimento e deploy provisório. A página publicada é um aviso temporário, ainda sem a interface aprovada.
+- Repositório: `xgreatgroup/celso-vidros`, branch `main`.
+- Cloudflare Pages: `celso-vidros`, deploy automático da raiz do repositório.
+- Endereço principal: https://celsovidros.com.br/
+- Endereço alternativo: https://www.celsovidros.com.br/ — redirecionamento 301 para o domínio principal, preservando caminho e parâmetros.
+- Prévia: https://celso-vidros.pages.dev/
+- Commits de implementação: CSS `76372ce`, JavaScript `f50125a`, homepage `851b990`.
+- Ambos os domínios personalizados constavam como Active / SSL enabled no Pages.
+- Registro.br: domínio publicado até 13/10/2027; nameservers jeff.ns.cloudflare.com e kira.ns.cloudflare.com, iguais aos da zona Cloudflare.
+- DNS: CNAME do domínio principal e do www para `celso-vidros.pages.dev`, com proxy. MX e demais registros de e-mail/serviços preexistentes preservados.
+- DNSSEC da zona Cloudflare permanece desativado; não foi alterado.
 
-## Envio de materiais
+## Verificações
 
-- [assets/midia/](assets/midia/): logos, favicon e ícones institucionais.
-- [assets/fotos/recebidas/](assets/fotos/recebidas/): fotos e vídeos originais, sem modificar os arquivos recebidos.
-- [assets/fotos/site/](assets/fotos/site/): versões selecionadas e otimizadas para publicação.
+Página aberta no Pages e no domínio principal; www redirecionou para o domínio principal inclusive em página interna com parâmetro. HTTPS ativo. Imagens carregadas, links WhatsApp corretos, menu móvel funcional, galeria modal abriu, avançou e fechou; largura móvel sem rolagem horizontal.
 
-## Publicação
+## Pendências editoriais
 
-Cloudflare Pages: projeto `celso-vidros`, branch `main`, sem comando de build, diretório de saída `.`. Prévia provisória: https://celso-vidros.pages.dev. O domínio definitivo é uma etapa separada; não alterar DNS nesta fase.
-
-## Retomada
-
-Após o upload dos materiais, selecionar fotos, reproduzir `PreviaCelsoAprovada.jpeg`, conferir os dados comerciais, implementar funcionalidades, testar desktop e celular e publicar a versão de apresentação. Antes de indexar, revisar as páginas legais, `robots.txt` e `sitemap.xml`.
+- As três páginas legais ainda contêm texto provisório. Revisar conteúdo com o responsável antes de indexação.
+- `index.html` mantém `noindex,follow`; `robots.txt` mantém `Disallow: /`. Após revisão das páginas legais, atualizar ambos e preencher `sitemap.xml`.
+- Monitorar a entrega de e-mail no provedor já configurado, sem alterar MX, SPF e serviços relacionados sem necessidade comprovada.
