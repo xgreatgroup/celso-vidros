@@ -53,3 +53,4 @@
 @media(max-width:500px){.gallery{gap:10px}.photo{aspect-ratio:1}.photo span{font-size:11px;padding:24px 10px 9px}.location-panel{padding:20px;gap:14px}.location-panel img{width:40px;height:40px}.qualities{gap:20px 0}.quality:nth-child(odd){border-left:0}.wa-float{right:16px;bottom:16px;width:57px;height:57px}.footer .logo-words strong{font-size:20px}}
 .logo-symbol{height:57px}
 @media(max-width:780px){.logo-symbol{height:43px}}
+@media(max-width:780px){.foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
